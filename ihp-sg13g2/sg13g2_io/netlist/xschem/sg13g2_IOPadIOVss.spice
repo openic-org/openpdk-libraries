@@ -1,0 +1,11 @@
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_IOPadIOVss.sch
+.subckt sg13g2_IOPadIOVss vss vdd sub iovss iovdd
+*.PININFO iovdd:B vss:B vdd:B sub:B iovss:B
+R2 vss sub ptap1 A=24p P=160.6u
+* noconn vdd
+R1 iovss sub ptap1 A=5548.3964p P=925.24u
+D1 iovss iovdd dpantenna l=27.78u w=1.26u
+D3 sub iovss dantenna l=27.78u w=1.26u
+D2 iovss iovdd dpantenna l=27.78u w=1.26u
+D4 sub iovss dantenna l=27.78u w=1.26u
+.ends

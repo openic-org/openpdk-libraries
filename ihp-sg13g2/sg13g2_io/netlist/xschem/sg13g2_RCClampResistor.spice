@@ -1,0 +1,5 @@
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_RCClampResistor.sch
+.subckt sg13g2_RCClampResistor p1 p2
+*.PININFO p1:B p2:B
+R1 p1 p2 rppd w=1e-6 l=520e-6 m=1 b=0
+.ends

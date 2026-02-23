@@ -1,0 +1,29 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 18:00
+
+.SUBCKT sg13g2_IOPadIn pad iovss iovss$1 iovdd vdd vss p2c
+X$1 \$1 iovss pad pad sg13g2_DCNDiode
+X$2 \$1 pad iovdd vss p2c vdd sg13g2_LevelDown_noptap
+R$1 \$1 vss ptap1 A=24p P=160.6u
+R$2 \$1 iovss$1 ptap1 A=5416.1304p P=746.28u
+D$3 pad iovdd dpantenna A=35.0028p P=58.08u m=2
+.ENDS sg13g2_IOPadIn
+
+.SUBCKT sg13g2_LevelDown_noptap \$1 pad iovdd vss core vdd
+M$1 core \$7 vss \$1 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p PS=6.18u
++ PD=6.18u
+M$2 vss \$10 \$7 \$1 sg13_hv_nmos L=0.45u W=2.65u AS=0.901p AD=0.901p PS=5.98u
++ PD=5.98u
+M$3 core \$7 vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p PS=10.18u
++ PD=10.18u
+M$4 vdd \$10 \$7 vdd sg13_hv_pmos L=0.45u W=4.65u AS=1.581p AD=1.581p PS=9.98u
++ PD=9.98u
+D$5 \$1 \$10 dantenna A=1.984p P=7.48u m=1
+D$6 \$10 iovdd dpantenna A=3.1872p P=11.24u m=1
+R$7 pad \$10 rppd w=1u l=2u ps=0 b=0 m=1
+.ENDS sg13g2_LevelDown_noptap
+
+.SUBCKT sg13g2_DCNDiode \$2 anode cathode cathode$1
+D$1 \$2 cathode$1 dantenna A=35.0028p P=58.08u m=1
+D$2 \$2 cathode dantenna A=35.0028p P=58.08u m=1
+R$3 \$2 anode ptap1 A=141.2964p P=221.76u
+.ENDS sg13g2_DCNDiode

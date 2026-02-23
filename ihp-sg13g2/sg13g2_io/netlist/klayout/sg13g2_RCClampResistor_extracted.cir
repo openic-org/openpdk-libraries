@@ -1,0 +1,5 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 17:52
+
+.SUBCKT sg13g2_RCClampResistor pin1 pin2
+R$26 pin2 pin1 rppd w=1u l=520u ps=0 b=0 m=1
+.ENDS sg13g2_RCClampResistor

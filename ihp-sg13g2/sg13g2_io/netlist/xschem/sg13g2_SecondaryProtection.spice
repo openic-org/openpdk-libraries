@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sch
+.subckt sg13g2_SecondaryProtection core iovdd iovss pad sub
+*.PININFO iovss:B core:B pad:B iovdd:B sub:B
+R1 iovss sub ptap1 A=9.0304p P=53.12u
+D1 core iovdd dpantenna l=4.98u w=0.64u
+R2 core pad rppd w=1e-6 l=2e-6 m=1 b=0
+D2 sub core dantenna l=3.1u w=0.64u
+.ends

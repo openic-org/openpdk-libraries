@@ -1,0 +1,70 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 18:12
+
+.SUBCKT sg13g2_IOPadOut4mA pad iovss iovdd iovdd$1 vdd vss c2p
+X$1 iovdd$1 vdd vss \$15 \$5 c2p \$1 sg13g2_GateLevelUpInv_noptap
+X$2 \$1 iovss pad pad sg13g2_DCNDiode
+X$3 \$1 iovss \$5 pad sg13g2_Clamp_N2N2D
+X$4 iovdd pad pad sg13g2_DCPDiode_noptap
+X$5 iovdd pad \$15 sg13g2_Clamp_P2N2D_noptap
+R$1 \$1 iovss ptap1 A=4413.9448p P=953.3u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+.ENDS sg13g2_IOPadOut4mA
+
+.SUBCKT sg13g2_GateLevelUpInv_noptap iovdd vdd vss pgate ngate core \$7
+M$1 \$I9 core vss \$7 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p PS=6.18u
++ PD=6.18u
+M$2 vss \$I8 ngate \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p PS=4.48u
++ PD=4.48u
+M$3 \$I7 core vss \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p PS=4.48u
++ PD=2.28u
+M$4 vss \$I9 \$I8 \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p PS=2.28u
++ PD=4.48u
+M$5 \$I9 core vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$6 iovdd \$I8 ngate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$7 \$I7 \$I8 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$8 iovdd \$I7 \$I8 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+M$9 \$I12 core vss \$7 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p
++ PS=6.18u PD=6.18u
+M$10 vss \$I11 pgate \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p
++ PS=4.48u PD=4.48u
+M$11 \$I10 core vss \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p
++ PS=4.48u PD=2.28u
+M$12 vss \$I12 \$I11 \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p
++ PS=2.28u PD=4.48u
+M$13 \$I12 core vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$14 iovdd \$I11 pgate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$15 \$I10 \$I11 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$16 iovdd \$I10 \$I11 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+.ENDS sg13g2_GateLevelUpInv_noptap
+
+.SUBCKT sg13g2_Clamp_N2N2D \$2 iovss gate pad
+M$1 iovss gate pad \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.664p AD=4.664p PS=15.32u
++ PD=15.32u
+D$3 \$2 gate dantenna A=0.6084p P=3.12u m=1
+R$4 \$2 iovss ptap1 A=55.7736p P=328.08u
+.ENDS sg13g2_Clamp_N2N2D
+
+.SUBCKT sg13g2_Clamp_P2N2D_noptap iovdd pad gate
+M$1 iovdd gate pad iovdd sg13_hv_pmos L=0.6u W=26.64u AS=14.1192p AD=14.1192p
++ PS=44.2u PD=44.2u
+D$5 gate iovdd dpantenna A=0.2304p P=1.92u m=1
+.ENDS sg13g2_Clamp_P2N2D_noptap
+
+.SUBCKT sg13g2_DCNDiode \$2 anode cathode cathode$1
+D$1 \$2 cathode$1 dantenna A=35.0028p P=58.08u m=1
+D$2 \$2 cathode dantenna A=35.0028p P=58.08u m=1
+R$3 \$2 anode ptap1 A=141.2964p P=221.76u
+.ENDS sg13g2_DCNDiode
+
+.SUBCKT sg13g2_DCPDiode_noptap cathode anode anode$1
+D$1 anode$1 cathode dpantenna A=35.0028p P=58.08u m=1
+D$2 anode cathode dpantenna A=35.0028p P=58.08u m=1
+.ENDS sg13g2_DCPDiode_noptap

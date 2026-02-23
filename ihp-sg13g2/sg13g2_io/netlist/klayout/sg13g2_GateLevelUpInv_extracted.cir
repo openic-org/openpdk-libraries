@@ -1,0 +1,37 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 17:37
+
+.SUBCKT sg13g2_GateLevelUpInv iovdd vdd vss pgate ngate core
+R$1 \$7 vss ptap1 A=2.106p P=14.64u
+M$2 \$I9 core vss \$7 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p PS=6.18u
++ PD=6.18u
+M$3 vss \$I8 pgate \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p PS=4.48u
++ PD=4.48u
+M$4 \$I7 core vss \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p PS=4.48u
++ PD=2.28u
+M$5 vss \$I9 \$I8 \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p PS=2.28u
++ PD=4.48u
+M$6 \$I9 core vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$7 iovdd \$I8 pgate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$8 \$I7 \$I8 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$9 iovdd \$I7 \$I8 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+M$10 \$I12 core vss \$7 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p
++ PS=6.18u PD=6.18u
+M$11 vss \$I11 ngate \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.646p
++ PS=4.48u PD=4.48u
+M$12 \$I10 core vss \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.646p AD=0.361p
++ PS=4.48u PD=2.28u
+M$13 vss \$I12 \$I11 \$7 sg13_hv_nmos L=0.45u W=1.9u AS=0.361p AD=0.646p
++ PS=2.28u PD=4.48u
+M$14 \$I12 core vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u
+M$15 iovdd \$I11 ngate iovdd sg13_hv_pmos L=0.45u W=3.9u AS=1.326p AD=1.326p
++ PS=8.48u PD=8.48u
+M$16 \$I10 \$I11 iovdd iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.102p AD=0.057p
++ PS=1.28u PD=0.68u
+M$17 iovdd \$I10 \$I11 iovdd sg13_hv_pmos L=0.45u W=0.3u AS=0.057p AD=0.102p
++ PS=0.68u PD=1.28u
+.ENDS sg13g2_GateLevelUpInv

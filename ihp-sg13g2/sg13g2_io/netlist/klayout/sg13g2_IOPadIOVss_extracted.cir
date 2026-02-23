@@ -1,0 +1,8 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 18:10
+
+.SUBCKT sg13g2_IOPadIOVss iovss iovdd vss
+R$1 \$1 iovss ptap1 A=5548.3964p P=925.24u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+D$3 iovss iovdd dpantenna A=35.0028p P=58.08u m=2
+D$5 \$1 iovss dantenna A=35.0028p P=58.08u m=2
+.ENDS sg13g2_IOPadIOVss

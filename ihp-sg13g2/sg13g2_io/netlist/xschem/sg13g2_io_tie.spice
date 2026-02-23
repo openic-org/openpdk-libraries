@@ -1,0 +1,6 @@
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_io_tie.sch
+.subckt sg13g2_io_tie vss vdd sub
+*.PININFO vss:B vdd:B sub:B
+R1 vss sub ptap1 A=0.6255p P=4.77u
+* noconn vdd
+.ends

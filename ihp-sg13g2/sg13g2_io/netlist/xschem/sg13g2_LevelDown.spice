@@ -1,0 +1,22 @@
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_LevelDown.sch
+.subckt sg13g2_LevelDown iovdd iovss pad core vdd vss sub
+*.PININFO iovdd:B vss:B core:B pad:B vdd:B iovss:B sub:B
+R1 vss sub ptap1 A=2.019p P=14.06u
+M5 net2 net1 vdd vdd sg13_hv_pmos w=4.65u l=0.45u ng=1 m=1
+M6 net2 net1 vss sub sg13_hv_nmos w=2.65u l=0.45u ng=1 m=1
+M7 core net2 vss sub sg13_lv_nmos w=2.75u l=0.13u ng=1 m=1
+M8 core net2 vdd vdd sg13_lv_pmos w=4.75u l=0.13u ng=1 m=1
+x1 net1 iovdd iovss pad sub sg13g2_SecondaryProtection
+.ends
+
+* expanding   symbol:  sg13g2_SecondaryProtection.sym # of pins=5
+** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sym
+** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sch
+.subckt sg13g2_SecondaryProtection core iovdd iovss pad sub
+*.PININFO iovss:B core:B pad:B iovdd:B sub:B
+R1 iovss sub ptap1 A=9.0304p P=53.12u
+D1 core iovdd dpantenna l=4.98u w=0.64u
+R2 core pad rppd w=1e-6 l=2e-6 m=1 b=0
+D2 sub core dantenna l=3.1u w=0.64u
+.ends
+

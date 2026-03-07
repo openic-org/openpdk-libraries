@@ -22,7 +22,7 @@ This library was created from the **SG13G2_IO reference library** developed by `
 ## Notes
 
 ### Xschem
-* Enable/disable the following options in ***Simulation > LVS***.
+* For LVS Netlist, enable/disable the following options in ***Simulation > LVS***.
   
     | Option | Status |
     | :----- | :----- |

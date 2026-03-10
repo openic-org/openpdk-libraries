@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 N -0 -60 -0 -30 {lab=p1}
-N 0 30 -0 60 {lab=p2}
+N 0 30 -0 60 {lab=pin2}
 C {iopin.sym} 0 -60 0 0 {name=p6 lab=p1
 }
 C {sg13g2_pr/rppd.sym} 0 0 0 0 {name=R1

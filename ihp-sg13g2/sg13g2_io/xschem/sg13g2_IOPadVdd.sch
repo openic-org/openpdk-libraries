@@ -18,7 +18,7 @@ N -130 -140 -130 -60 {lab=iovss}
 N -200 -60 -130 -60 {lab=iovss}
 N -120 -140 -120 -100 {lab=sub}
 N -140 -100 -120 -100 {lab=sub}
-N 110 -140 110 -60 {lab=iovss1}
+N 110 -140 110 -60 {lab=iovss}
 N 120 -140 120 -100 {lab=sub}
 N -20 -100 120 -100 {lab=sub}
 N 80 -360 80 -190 {lab=vdd}
@@ -44,7 +44,7 @@ w=4.9e-6
 l=4.9e-6
 lvs_format="tcleval(@name @pinlist @model A=24p P=160.6u )"
 }
-C {iopin.sym} -200 -60 0 1 {name=p1 lab=iovss
+C {iopin.sym} -200 -60 0 1 {name=p1 lab=iovss1
 }
 C {sg13g2_pr/ptap1.sym} 0 10 0 0 {name=R1
 model=ptap1
@@ -56,6 +56,6 @@ lvs_format="tcleval(@name @pinlist @model A=2051.93485p P=727.53u)"
 C {sg13g2_Clamp_N43N43D4R.sym} 110 -180 0 0 {name=x1}
 C {sg13g2_RCClampResistor.sym} -170 -300 0 0 {name=x2}
 C {sg13g2_RCClampInverter_noptap.sym} -130 -180 0 0 {name=x3}
-C {iopin.sym} 110 -60 0 1 {name=p2 lab=iovss1
+C {iopin.sym} 110 -60 0 1 {name=p2 lab=iovss
 }
 C {noconn.sym} -200 -380 0 1 {name=l1}

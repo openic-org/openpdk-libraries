@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_GateLevelUpInv.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_GateLevelUpInv.sch
 .subckt sg13g2_GateLevelUpInv iovdd vss core pgate vdd sub ngate
 *.PININFO iovdd:B vss:B pgate:B core:B vdd:B sub:B ngate:B
 x1 iovdd vss core pgate vdd sub sg13g2_LevelUpInv_noptap
@@ -7,8 +7,8 @@ R1 vss sub ptap1 A=2.106p P=14.64u
 .ends
 
 * expanding   symbol:  sg13g2_LevelUpInv_noptap.sym # of pins=6
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_LevelUpInv_noptap.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_LevelUpInv_noptap.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelUpInv_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelUpInv_noptap.sch
 .subckt sg13g2_LevelUpInv_noptap iovdd vss in out vdd sub
 *.PININFO iovdd:B vss:B out:B in:B vdd:B sub:B
 M1 net1 in vss sub sg13_hv_nmos w=1.9u l=0.45u ng=1 m=1

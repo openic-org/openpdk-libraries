@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Corner.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Corner.sch
 .subckt sg13g2_Corner iovdd vdd vss sub iovss1 iovss3 iovss2
 *.PININFO vss:B iovdd:B vdd:B sub:B iovss1:B iovss2:B iovss3:B
 R3 iovss3 sub ptap1 A=2278.0436p P=235.225u

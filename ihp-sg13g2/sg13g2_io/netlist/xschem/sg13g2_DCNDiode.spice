@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_DCNDiode.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCNDiode.sch
 .subckt sg13g2_DCNDiode cathode1 anode cathode2 guard sub
 *.PININFO cathode2:B guard:B anode:B cathode1:B sub:B
 R1 anode sub ptap1 A=141.2964p P=221.76u

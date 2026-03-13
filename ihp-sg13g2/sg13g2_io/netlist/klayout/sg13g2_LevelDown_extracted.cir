@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 17:45
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:26
 
 .SUBCKT sg13g2_LevelDown pad iovdd iovss vss core vdd
 X$1 \$1 iovss \$10 pad iovdd sg13g2_SecondaryProtection

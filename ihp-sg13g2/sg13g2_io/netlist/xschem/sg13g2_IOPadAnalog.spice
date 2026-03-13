@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_IOPadAnalog.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_IOPadAnalog.sch
 .subckt sg13g2_IOPadAnalog iovdd1 vss pad vdd sub padres iovss iovdd
 *.PININFO padres:B iovdd:B vss:B vdd:B sub:B iovss:B pad:B iovdd1:B
 R2 vss sub ptap1 A=23.85p P=159.6u
@@ -12,8 +12,8 @@ R1 iovss sub ptap1 A=4373.9448p P=1112.3u
 .ends
 
 * expanding   symbol:  sg13g2_Clamp_P20N0D_noptap.sym # of pins=4
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Clamp_P20N0D_noptap.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Clamp_P20N0D_noptap.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_P20N0D_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_P20N0D_noptap.sch
 .subckt sg13g2_Clamp_P20N0D_noptap iovdd iovss pad[9] pad[8] pad[7] pad[6] pad[5] pad[4] pad[3] pad[2] pad[1] pad[0] sub
 *.PININFO iovss:B iovdd:B pad[9:0]:B sub:B
 M1 pad[0] net1 iovdd iovdd sg13_hv_pmos w=26.64u l=0.6u ng=4 m=1
@@ -31,8 +31,8 @@ R2 iovdd net1 rppd w=0.5e-6 l=12.9e-6 m=1 b=0
 
 
 * expanding   symbol:  sg13g2_DCPDiode_noptap.sym # of pins=5
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_DCPDiode_noptap.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_DCPDiode_noptap.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCPDiode_noptap.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCPDiode_noptap.sch
 .subckt sg13g2_DCPDiode_noptap cathode guard anode1 anode2 sub
 *.PININFO anode2:B cathode:B guard:B anode1:B sub:B
 D1 anode1 cathode dpantenna l=27.78u w=1.26u
@@ -41,8 +41,8 @@ D2 anode2 cathode dpantenna l=27.78u w=1.26u
 
 
 * expanding   symbol:  sg13g2_Clamp_N20N0D.sym # of pins=3
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Clamp_N20N0D.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Clamp_N20N0D.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_N20N0D.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_N20N0D.sch
 .subckt sg13g2_Clamp_N20N0D iovss pad[9] pad[8] pad[7] pad[6] pad[5] pad[4] pad[3] pad[2] pad[1] pad[0] sub
 *.PININFO iovss:B pad[9:0]:B sub:B
 R1 iovss sub ptap1 A=55.7736p P=328.08u
@@ -61,8 +61,8 @@ R2 net1 iovss rppd w=0.5e-6 l=3.54e-6 m=1 b=0
 
 
 * expanding   symbol:  sg13g2_DCNDiode.sym # of pins=5
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_DCNDiode.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_DCNDiode.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCNDiode.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_DCNDiode.sch
 .subckt sg13g2_DCNDiode cathode1 anode cathode2 guard sub
 *.PININFO cathode2:B guard:B anode:B cathode1:B sub:B
 R1 anode sub ptap1 A=141.2964p P=221.76u
@@ -73,8 +73,8 @@ D2 sub cathode2 dantenna l=27.78u w=1.26u
 
 
 * expanding   symbol:  sg13g2_SecondaryProtection.sym # of pins=5
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_SecondaryProtection.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_SecondaryProtection.sch
 .subckt sg13g2_SecondaryProtection core iovdd iovss pad sub
 *.PININFO iovss:B core:B pad:B iovdd:B sub:B
 R1 iovss sub ptap1 A=9.0304p P=53.12u

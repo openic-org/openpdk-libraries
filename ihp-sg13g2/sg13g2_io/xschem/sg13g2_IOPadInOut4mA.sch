@@ -17,14 +17,14 @@ N 220 -140 220 -60 {lab=iovss}
 N 170 -60 220 -60 {lab=iovss}
 N 210 -220 230 -220 {lab=pad}
 N 210 -260 230 -260 {lab=pad}
-N 220 -380 220 -340 {lab=iovdd1}
-N 120 -380 220 -380 {lab=iovdd1}
+N 220 -380 220 -340 {lab=iovdd}
+N 120 -380 220 -380 {lab=iovdd}
 N 210 -230 210 -220 {lab=pad}
 N 200 -240 210 -250 {lab=pad}
 N 210 -260 210 -250 {lab=pad}
 N 210 -230 220 -240 {lab=pad}
-N 260 -190 280 -190 {lab=iovdd1}
-N 280 -380 280 -190 {lab=iovdd1}
+N 260 -190 280 -190 {lab=iovdd}
+N 280 -380 280 -190 {lab=iovdd}
 N 260 -310 270 -310 {lab=sub}
 N 260 -170 270 -170 {lab=sub}
 N 270 -290 270 -170 {lab=sub}
@@ -47,10 +47,10 @@ N 120 -270 120 -200 {lab=iovss}
 N 120 -200 170 -200 {lab=iovss}
 N 170 -200 170 -60 {lab=iovss}
 N 120 -60 170 -60 {lab=iovss}
-N 120 -380 120 -350 {lab=iovdd1}
+N 120 -380 120 -350 {lab=iovdd}
 N 220 -240 300 -240 {lab=pad}
 N 150 -240 200 -240 {lab=pad}
-N 220 -380 280 -380 {lab=iovdd1}
+N 220 -380 280 -380 {lab=iovdd}
 N -150 -200 -150 -100 {lab=sub}
 N -200 -100 -150 -100 {lab=sub}
 N -140 -200 -140 -80 {lab=vss}
@@ -81,7 +81,7 @@ N -200 -60 -50 -60 {lab=iovss}
 N -200 -160 -100 -160 {lab=p2c}
 N 150 -300 150 -240 {lab=pad}
 N 150 -220 150 -170 {lab=pad}
-C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
+C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd1
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss
 }
@@ -105,7 +105,7 @@ w=66.51e-6
 l=66.51e-6
 lvs_format="tcleval(@name @pinlist @model A=4422.9752p P=996.1u)"
 }
-C {iopin.sym} 120 -380 0 1 {name=p2 lab=iovdd1
+C {iopin.sym} 120 -380 0 1 {name=p2 lab=iovdd
 }
 C {iopin.sym} 300 -240 0 0 {name=p3 lab=pad
 }
@@ -113,7 +113,7 @@ C {iopin.sym} -200 -230 0 1 {name=p4 lab=c2p_en
 }
 C {sg13g2_DCPDiode_noptap.sym} 220 -300 0 0 {name=x2}
 C {sg13g2_DCNDiode.sym} 220 -180 0 0 {name=x1}
-C {sg13g2_GateDecode.sym} -140 -240 0 0 {name=x3}
+C {sg13g2_GateDecode_noptap.sym} -140 -240 0 0 {name=x3}
 C {sg13g2_Clamp_N2N2D.sym} 120 -160 0 1 {name=x4}
 C {sg13g2_Clamp_P2N2D_noptap.sym} 120 -310 0 1 {name=x5}
 C {iopin.sym} -200 -250 0 1 {name=p5 lab=c2p

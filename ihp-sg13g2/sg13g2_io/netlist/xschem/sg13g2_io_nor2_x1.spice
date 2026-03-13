@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_io_nor2_x1.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_io_nor2_x1.sch
 .subckt sg13g2_io_nor2_x1 vss i0 nq vdd sub i1
 *.PININFO vss:B nq:B i0:B vdd:B sub:B i1:B
 R1 vss sub ptap1 A=0.657p P=4.98u

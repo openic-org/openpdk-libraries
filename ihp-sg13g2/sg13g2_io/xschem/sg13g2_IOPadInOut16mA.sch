@@ -57,8 +57,8 @@ N -140 -200 -140 -80 {lab=vss}
 N -200 -80 -140 -80 {lab=vss}
 N -140 -360 -140 -280 {lab=vdd}
 N -200 -360 -140 -360 {lab=vdd}
-N -130 -380 -130 -280 {lab=iovdd}
-N -200 -380 -130 -380 {lab=iovdd}
+N -130 -380 -130 -280 {lab=iovdd1}
+N -200 -380 -130 -380 {lab=iovdd1}
 N 160 -100 250 -100 {lab=sub}
 N -200 -250 -180 -250 {lab=c2p}
 N -200 -240 -200 -230 {lab=c2p_en}
@@ -70,8 +70,8 @@ N -20 -220 -20 -160 {lab=pad}
 N -20 -220 150 -220 {lab=pad}
 N -60 -360 -60 -200 {lab=vdd}
 N -140 -360 -60 -360 {lab=vdd}
-N -50 -380 -50 -200 {lab=iovdd}
-N -130 -380 -50 -380 {lab=iovdd}
+N -50 -380 -50 -200 {lab=iovdd1}
+N -130 -380 -50 -380 {lab=iovdd1}
 N -70 -120 -70 -100 {lab=sub}
 N -120 -100 -70 -100 {lab=sub}
 N -60 -120 -60 -80 {lab=vss}
@@ -81,7 +81,7 @@ N -200 -60 -50 -60 {lab=iovss}
 N -200 -160 -100 -160 {lab=p2c}
 N 150 -220 150 -170 {lab=pad}
 N 150 -300 150 -240 {lab=pad}
-C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
+C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd1
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss
 }
@@ -105,7 +105,7 @@ w=66.51e-6
 l=66.51e-6
 lvs_format="tcleval(@name @pinlist @model A=4422.9752p P=996.1u)"
 }
-C {iopin.sym} 120 -380 0 1 {name=p2 lab=iovdd1
+C {iopin.sym} 120 -380 0 1 {name=p2 lab=iovdd
 }
 C {iopin.sym} 300 -240 0 0 {name=p3 lab=pad
 }
@@ -113,7 +113,7 @@ C {iopin.sym} -200 -230 0 1 {name=p4 lab=c2p_en
 }
 C {sg13g2_DCPDiode_noptap.sym} 220 -300 0 0 {name=x2}
 C {sg13g2_DCNDiode.sym} 220 -180 0 0 {name=x1}
-C {sg13g2_GateDecode.sym} -140 -240 0 0 {name=x3}
+C {sg13g2_GateDecode_noptap.sym} -140 -240 0 0 {name=x3}
 C {sg13g2_Clamp_N8N8D.sym} 120 -160 0 1 {name=x4}
 C {sg13g2_Clamp_P8N8D_noptap.sym} 120 -310 0 1 {name=x5}
 C {iopin.sym} -200 -250 0 1 {name=p5 lab=c2p

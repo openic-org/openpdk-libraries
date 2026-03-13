@@ -58,8 +58,8 @@ N 210 40 210 60 {lab=sub}
 N 220 40 220 80 {lab=vss}
 C {iopin.sym} 80 0 0 0 {name=p2 lab=pgate
 }
-C {sg13g2_LevelUp.sym} 20 0 0 0 {name=x1}
-C {sg13g2_LevelUp.sym} 220 -300 0 0 {name=x2}
+C {sg13g2_LevelUp_noptap.sym} 20 0 0 0 {name=x1}
+C {sg13g2_LevelUp_noptap.sym} 220 -300 0 0 {name=x2}
 C {iopin.sym} 280 -300 0 0 {name=p7 lab=ngate
 }
 C {lab_pin.sym} -200 -10 0 0 {name=p8 sig_type=std_logic lab=core}

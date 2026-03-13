@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 16:41
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:16
 
 .SUBCKT sg13g2_Clamp_N2N2D iovss gate pad
 M$1 iovss gate pad \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.664p AD=4.664p PS=15.32u

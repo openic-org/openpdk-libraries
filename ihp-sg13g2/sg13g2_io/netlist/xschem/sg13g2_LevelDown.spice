@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_LevelDown.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelDown.sch
 .subckt sg13g2_LevelDown iovdd iovss pad core vdd vss sub
 *.PININFO iovdd:B vss:B core:B pad:B vdd:B iovss:B sub:B
 R1 vss sub ptap1 A=2.019p P=14.06u
@@ -10,8 +10,8 @@ x1 net1 iovdd iovss pad sub sg13g2_SecondaryProtection
 .ends
 
 * expanding   symbol:  sg13g2_SecondaryProtection.sym # of pins=5
-** sym_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sym
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_SecondaryProtection.sch
+** sym_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_SecondaryProtection.sym
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_SecondaryProtection.sch
 .subckt sg13g2_SecondaryProtection core iovdd iovss pad sub
 *.PININFO iovss:B core:B pad:B iovdd:B sub:B
 R1 iovss sub ptap1 A=9.0304p P=53.12u

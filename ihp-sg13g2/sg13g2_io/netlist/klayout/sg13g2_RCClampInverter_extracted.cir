@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 17:50
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:22
 
 .SUBCKT sg13g2_RCClampInverter iovss in out supply
 M$1 iovss in iovss \$1 sg13_hv_nmos L=9.5u W=126u AS=26.64p AD=23.94p

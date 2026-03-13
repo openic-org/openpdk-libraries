@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_LevelUpInv.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_LevelUpInv.sch
 .subckt sg13g2_LevelUpInv iovdd vss in out vdd sub
 *.PININFO iovdd:B vss:B out:B in:B vdd:B sub:B
 R1 vss sub ptap1 A=1.053p P=7.62u

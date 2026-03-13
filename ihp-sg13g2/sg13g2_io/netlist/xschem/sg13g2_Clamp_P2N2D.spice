@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_Clamp_P2N2D.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_Clamp_P2N2D.sch
 .subckt sg13g2_Clamp_P2N2D gate iovdd iovss pad sub
 *.PININFO iovss:B gate:B pad:B iovdd:B sub:B
 R1 iovss sub ptap1 A=67.0344p P=394.32u

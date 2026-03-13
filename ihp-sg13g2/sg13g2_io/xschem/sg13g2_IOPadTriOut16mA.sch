@@ -17,14 +17,14 @@ N 80 -140 80 -60 {lab=iovss}
 N 10 -60 80 -60 {lab=iovss}
 N 70 -220 90 -220 {lab=pad}
 N 70 -260 90 -260 {lab=pad}
-N 80 -380 80 -340 {lab=iovdd1}
-N -40 -380 80 -380 {lab=iovdd1}
+N 80 -380 80 -340 {lab=iovdd}
+N -40 -380 80 -380 {lab=iovdd}
 N 70 -230 70 -220 {lab=pad}
 N 60 -240 70 -250 {lab=pad}
 N 70 -260 70 -250 {lab=pad}
 N 70 -230 80 -240 {lab=pad}
-N 120 -190 140 -190 {lab=iovdd1}
-N 140 -380 140 -190 {lab=iovdd1}
+N 120 -190 140 -190 {lab=iovdd}
+N 140 -380 140 -190 {lab=iovdd}
 N 120 -310 130 -310 {lab=sub}
 N 120 -170 130 -170 {lab=sub}
 N 130 -290 130 -170 {lab=sub}
@@ -49,25 +49,25 @@ N -40 -270 -40 -200 {lab=iovss}
 N -40 -200 10 -200 {lab=iovss}
 N 10 -200 10 -60 {lab=iovss}
 N -40 -60 10 -60 {lab=iovss}
-N -40 -380 -40 -350 {lab=iovdd1}
+N -40 -380 -40 -350 {lab=iovdd}
 N 80 -240 160 -240 {lab=pad}
 N -10 -240 60 -240 {lab=pad}
-N 80 -380 140 -380 {lab=iovdd1}
+N 80 -380 140 -380 {lab=iovdd}
 N -150 -200 -150 -100 {lab=sub}
 N -200 -100 -150 -100 {lab=sub}
 N -140 -200 -140 -80 {lab=vss}
 N -200 -80 -140 -80 {lab=vss}
 N -140 -360 -140 -280 {lab=vdd}
 N -200 -360 -140 -360 {lab=vdd}
-N -130 -380 -130 -280 {lab=iovdd}
-N -200 -380 -130 -380 {lab=iovdd}
+N -130 -380 -130 -280 {lab=iovdd1}
+N -200 -380 -130 -380 {lab=iovdd1}
 N -0 -100 110 -100 {lab=sub}
 N -200 -250 -180 -250 {lab=c2p}
 N -200 -240 -200 -230 {lab=c2p_en}
 N -200 -240 -180 -240 {lab=c2p_en}
 N -10 -300 -10 -240 {lab=pad}
 N -10 -240 -10 -170 {lab=pad}
-C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
+C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd1
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss
 }
@@ -91,7 +91,7 @@ w=66.44e-6
 l=66.44e-6
 lvs_format="tcleval(@name @pinlist @model A=4413.9448p P=953.3u)"
 }
-C {iopin.sym} -40 -380 0 1 {name=p2 lab=iovdd1
+C {iopin.sym} -40 -380 0 1 {name=p2 lab=iovdd
 }
 C {iopin.sym} 160 -240 0 0 {name=p3 lab=pad
 }
@@ -99,7 +99,7 @@ C {iopin.sym} -200 -230 0 1 {name=p4 lab=c2p_en
 }
 C {sg13g2_DCPDiode_noptap.sym} 80 -300 0 0 {name=x2}
 C {sg13g2_DCNDiode.sym} 80 -180 0 0 {name=x1}
-C {sg13g2_GateDecode.sym} -140 -240 0 0 {name=x3}
+C {sg13g2_GateDecode_noptap.sym} -140 -240 0 0 {name=x3}
 C {sg13g2_Clamp_N8N8D.sym} -40 -160 0 1 {name=x4}
 C {sg13g2_Clamp_P8N8D_noptap.sym} -40 -310 0 1 {name=x5}
 C {iopin.sym} -200 -250 0 1 {name=p5 lab=c2p

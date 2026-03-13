@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/amaru/analog/sg13g2_io/sg13g2_RCClampInverter.sch
+** sch_path: /home/designer/shared/ihp2603/openpdk-libraries/ihp-sg13g2/sg13g2_io/xschem/sg13g2_RCClampInverter.sch
 .subckt sg13g2_RCClampInverter supply iovss in out sub
 *.PININFO supply:B iovss:B out:B in:B sub:B
 R1 iovss sub ptap1 A=69.122p P=406.6u

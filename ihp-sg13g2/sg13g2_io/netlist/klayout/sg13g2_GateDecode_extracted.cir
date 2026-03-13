@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 20/02/2026 17:36
+* Extracted by KLayout with SG13G2 LVS runset on : 13/03/2026 09:30
 
 .SUBCKT sg13g2_GateDecode iovdd vdd vss ngate pgate core en
 X$3 \$8 core \$7 vdd vss \$11 sg13g2_io_nor2_x1_noptap

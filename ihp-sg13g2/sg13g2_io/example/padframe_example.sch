@@ -8,11 +8,11 @@ L 4 1230 430 1230 440 {}
 L 4 1230 440 1390 440 {}
 L 4 1390 430 1390 440 {}
 L 4 920 430 920 440 {}
-L 4 920 440 1160 440 {}
-L 4 1160 430 1160 440 {}
+L 4 920 440 1040 440 {}
+L 4 1040 430 1040 440 {}
 L 4 340 430 340 440 {}
-L 4 340 440 820 440 {}
-L 4 820 430 820 440 {}
+L 4 340 440 460 440 {}
+L 4 460 430 460 440 {}
 T {VSS} 1170 30 3 0 0.3 0.3 {}
 T {VDD} 1190 30 3 0 0.3 0.3 {}
 T {IOVDD} 1210 50 3 0 0.3 0.3 {}
@@ -23,12 +23,12 @@ T {When using more than 1 Corner cell, replace
 the cells with their Req extracted from the Layout.
 For 4x cells: R1 => A=40674.96p P=3929.688u
               R2 => A=52.7736p P=338.816u} 1190 470 0 0 0.2 0.2 {}
-T {Fillers between Pads} 960 450 0 0 0.3 0.3 {}
-T {4x Rows of 12x fillers (doesn't
-include fillers towards corners).} 960 470 0 0 0.2 0.2 {}
-T {Fillers next to Corners} 500 450 0 0 0.3 0.3 {}
-T {4x Rows of 8x fillers (from the last pad
-to the corner on the left and right sides).} 490 470 0 0 0.2 0.2 {}
+T {Fillers between Pads} 900 450 0 0 0.3 0.3 {}
+T {4x Rows of 3x fillers (doesn't
+include fillers towards corners).} 900 470 0 0 0.2 0.2 {}
+T {Fillers next to Corners} 320 450 0 0 0.3 0.3 {}
+T {4x Rows of 3x fillers (from the last pad
+to the corner on the left and right sides).} 310 470 0 0 0.2 0.2 {}
 T {VSS} 1510 -1050 2 0 0.3 0.3 {}
 T {VDD} 1510 -1070 2 0 0.3 0.3 {}
 T {IOVDD} 1530 -1090 2 0 0.3 0.3 {}

@@ -11,14 +11,14 @@ N -200 -100 -140 -100 {lab=sub}
 N -120 -80 -120 -20 {lab=vss}
 N -200 -80 -120 -80 {lab=vss}
 N -20 -100 -20 40 {lab=sub}
-N 0 -60 0 -20 {lab=iovss}
+N 0 -60 0 -20 {lab=iovss1}
 N -170 -380 -170 -340 {lab=iovdd}
 N -200 -380 -170 -380 {lab=iovdd}
 N -120 -100 -20 -100 {lab=sub}
 N -130 -380 80 -380 {lab=iovdd}
 N -170 -260 -170 -180 {lab=#net1}
-N -130 -140 -130 -60 {lab=iovss}
-N -200 -60 -130 -60 {lab=iovss}
+N -130 -140 -130 -60 {lab=iovss1}
+N -200 -60 -130 -60 {lab=iovss1}
 N -120 -140 -120 -100 {lab=sub}
 N -140 -100 -120 -100 {lab=sub}
 N -130 -380 -130 -220 {lab=iovdd}
@@ -28,7 +28,7 @@ N 120 -140 120 -100 {lab=sub}
 N -20 -100 120 -100 {lab=sub}
 N 80 -380 80 -190 {lab=iovdd}
 N -90 -180 80 -180 {lab=#net2}
-N -130 -60 0 -60 {lab=iovss}
+N -130 -60 0 -60 {lab=iovss1}
 C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss

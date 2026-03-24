@@ -11,7 +11,7 @@ N -200 -100 -140 -100 {lab=sub}
 N -120 -80 -120 -20 {lab=vss}
 N -130 -80 -120 -80 {lab=vss}
 N -20 -100 -20 40 {lab=sub}
-N -120 -100 -20 -100 {lab=sub}
+N -60 -100 -20 -100 {lab=sub}
 N -170 -260 -170 -180 {lab=#net1}
 N -120 -140 -120 -100 {lab=sub}
 N -140 -100 -120 -100 {lab=sub}
@@ -53,13 +53,16 @@ N 270 -210 310 -210 {lab=sub}
 N 270 -290 270 -210 {lab=sub}
 N 220 -80 280 -80 {lab=vss}
 N -200 -60 350 -60 {lab=iovss}
+N -150 -300 -60 -300 {lab=sub}
+N -60 -300 -60 -100 {lab=sub}
+N -120 -100 -60 -100 {lab=sub}
 C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss
 }
 C {iopin.sym} -200 -360 0 1 {name=p13 lab=vdd
 }
-C {iopin.sym} -200 -100 0 1 {name=p14 lab=sub
+C {iopin.sym} -200 -100 0 1 {name=p14 lab=!
 }
 C {sg13g2_pr/ptap1.sym} -120 10 0 0 {name=R2
 model=ptap1

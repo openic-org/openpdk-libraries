@@ -10,11 +10,11 @@ N 0 -120 0 -70 {lab=vdd}
 N 0 0 0 40 {lab=#net2}
 N -130 -60 -110 -60 {lab=iovdd}
 N 0 100 0 120 {lab=vss}
-N 0 70 40 70 {lab=#net3}
+N 0 70 40 70 {lab=!}
 N 140 -120 140 -70 {lab=vdd}
-N 140 70 180 70 {lab=#net3}
+N 140 70 180 70 {lab=!}
 N 140 100 140 120 {lab=vss}
-N 40 180 180 180 {lab=#net3}
+N 40 180 180 180 {lab=!}
 N 0 120 140 120 {lab=vss}
 N -160 0 -140 0 {lab=pad}
 N 140 0 140 40 {lab=core}
@@ -23,14 +23,14 @@ N -110 40 -110 60 {lab=iovss}
 N -110 -60 -110 -40 {lab=iovdd}
 N -130 60 -110 60 {lab=iovss}
 N -160 120 0 120 {lab=vss}
-N 40 70 40 180 {lab=#net3}
-N -160 180 40 180 {lab=#net3}
+N 40 70 40 180 {lab=!}
+N -160 180 40 180 {lab=!}
 N -70 0 -40 0 {lab=#net1}
 N -40 -70 -40 0 {lab=#net1}
 N 0 -120 140 -120 {lab=vdd}
 N -20 -120 -0 -120 {lab=vdd}
 N 140 -40 140 0 {lab=core}
-N 180 70 180 180 {lab=#net3}
+N 180 70 180 180 {lab=!}
 N 0 0 100 0 {lab=#net2}
 N 0 -40 0 0 {lab=#net2}
 N 100 -70 100 0 {lab=#net2}
@@ -87,6 +87,6 @@ C {iopin.sym} -20 -120 0 1 {name=p4 lab=vdd
 C {sg13g2_SecondaryProtection.sym} -110 0 0 0 {name=x1}
 C {iopin.sym} -130 60 0 1 {name=p7 lab=iovss
 }
-C {lab_pin.sym} -100 80 0 0 {name=p8 sig_type=std_logic lab=sub}
-C {iopin.sym} -160 180 0 1 {name=p5 lab=sub
+C {lab_pin.sym} -100 80 0 0 {name=p8 sig_type=std_logic lab=!}
+C {iopin.sym} -160 180 0 1 {name=p5 lab=!
 }

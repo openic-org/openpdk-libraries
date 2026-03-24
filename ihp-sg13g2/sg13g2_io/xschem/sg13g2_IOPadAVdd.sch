@@ -10,7 +10,7 @@ N -20 -100 -20 40 {lab=sub}
 N 0 -60 0 -20 {lab=vss1}
 N -170 -380 -170 -340 {lab=avdd}
 N -200 -380 -170 -380 {lab=avdd}
-N -120 -100 -20 -100 {lab=sub}
+N -60 -100 -20 -100 {lab=sub}
 N -130 -380 80 -380 {lab=avdd}
 N -170 -260 -170 -180 {lab=#net1}
 N -130 -140 -130 -60 {lab=vss1}
@@ -24,11 +24,14 @@ N -20 -100 120 -100 {lab=sub}
 N 80 -380 80 -190 {lab=avdd}
 N -90 -180 80 -180 {lab=#net2}
 N -130 -60 0 -60 {lab=vss1}
+N -150 -300 -60 -300 {lab=sub}
+N -60 -300 -60 -100 {lab=sub}
+N -120 -100 -60 -100 {lab=sub}
 C {iopin.sym} -200 -380 0 1 {name=p9 lab=avdd
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=avss
 }
-C {iopin.sym} -200 -100 0 1 {name=p14 lab=sub
+C {iopin.sym} -200 -100 0 1 {name=p14 lab=!
 }
 C {iopin.sym} -200 -60 0 1 {name=p1 lab=vss1
 }

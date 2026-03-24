@@ -120,7 +120,7 @@ m=1
 model=sg13_hv_pmos
 spiceprefix=X
 }
-C {iopin.sym} 1110 -160 0 0 {name=p1 lab=iovdd}
+C {iopin.sym} 1110 -160 0 0 {name=p1 lab=!}
 C {sg13g2_pr/sg13_hv_pmos.sym} 980 -70 0 0 {name=M9
 l=0.6u
 w=26.64u
@@ -137,15 +137,6 @@ m=1
 model=sg13_hv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/rppd.sym} 0 -130 0 0 {name=R2
-w=0.5e-6
-l=12.9e-6
-model=rppd
-body=iovdd
-spiceprefix=X
-b=0
-m=1
-lvs_format="tcleval(@name @@P @@M @model w=@w l=@l m=@m b=@b )"}
 C {iopin.sym} 40 40 0 0 {name=p4 lab=pad[9:0]}
 C {lab_pin.sym} 40 0 0 1 {name=p2 sig_type=std_logic lab=pad[0]}
 C {lab_pin.sym} 150 0 0 1 {name=p6 sig_type=std_logic lab=pad[1]}
@@ -158,3 +149,14 @@ C {lab_pin.sym} 870 0 0 1 {name=p12 sig_type=std_logic lab=pad[7]}
 C {lab_pin.sym} 1000 0 0 1 {name=p13 sig_type=std_logic lab=pad[8]}
 C {lab_pin.sym} 1110 0 0 1 {name=p14 sig_type=std_logic lab=pad[9]}
 C {iopin.sym} 220 140 0 0 {name=p5 lab=sub}
+C {sg13g2_pr/rppd.sym} 0 -130 0 0 {name=R1
+w=0.5e-6
+l=12.9e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+lvs_format="R@name @pinlist \\$SUB=@body \\$[@model\\\\] w=@w l=@l b=@b m=@m"
+}

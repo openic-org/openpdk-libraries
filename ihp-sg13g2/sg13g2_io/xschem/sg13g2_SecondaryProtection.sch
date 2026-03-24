@@ -4,15 +4,15 @@ K {}
 V {}
 S {}
 E {}
-N 0 80 0 100 {lab=#net1}
 N 0 0 0 20 {lab=core}
 N 0 -100 0 -80 {lab=iovdd}
-N -80 100 0 100 {lab=#net1}
 N -80 0 0 0 {lab=core}
 N 0 -20 0 0 {lab=core}
-N -180 100 -140 100 {lab=iovss}
 N -180 0 -140 0 {lab=pad}
 N -180 -100 0 -100 {lab=iovdd}
+N -180 100 -140 100 {lab=iovss}
+N -80 100 0 100 {lab=!}
+N 0 80 0 100 {lab=!}
 C {iopin.sym} -180 100 0 1 {name=p3 lab=iovss}
 C {iopin.sym} 0 0 0 0 {name=p4 lab=core}
 C {iopin.sym} -180 0 0 1 {name=p6 lab=pad}
@@ -30,19 +30,22 @@ l=4.98u
 w=0.64u
 spiceprefix=X
 }
-C {sg13g2_pr/rppd.sym} -110 0 1 1 {name=R2
-w=1e-6
-l=2e-6
-model=rppd
-body=sub
-spiceprefix=X
-b=0
-m=1
-lvs_format="tcleval(@name @@P @@M @model w=@w l=@l m=@m b=@b )"}
 C {sg13g2_pr/dantenna.sym} 0 50 0 1 {name=D2
 model=dantenna
 l=3.1u
 w=0.64u
 spiceprefix=X
 }
-C {iopin.sym} 0 100 0 0 {name=p2 lab=sub}
+C {sg13g2_pr/rppd.sym} -110 0 3 0 {name=R3
+w=1e-6
+l=2e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+lvs_format="R@name @pinlist \\$SUB=@body \\$[@model\\\\] w=@w l=@l b=@b m=@m"
+}
+C {lab_pin.sym} 0 100 0 1 {name=p2 sig_type=std_logic lab=!}
+C {iopin.sym} 0 140 0 0 {name=p5 lab=!}

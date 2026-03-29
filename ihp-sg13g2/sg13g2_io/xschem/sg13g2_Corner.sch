@@ -29,7 +29,7 @@ model=ptap1
 spiceprefix=X
 w=0.3e-6
 l=45.0e-6
-lvs_format="tcleval(@name @pinlist @model A=13.1934p P=84.704u )"
+lvs_format="tcleval(@name @pinlist @model A=13.1934p P=84.705u )"
 }
 C {iopin.sym} 220 -20 0 0 {name=p3 lab=vss}
 C {iopin.sym} 0 -60 0 0 {name=p4 lab=iovdd}
@@ -41,14 +41,14 @@ model=ptap1
 spiceprefix=X
 w=160.0e-6
 l=25e-6
-lvs_format="tcleval(@name @pinlist @model A=4546.51p P=420.331u )"
+lvs_format="tcleval(@name @pinlist @model A=4546.51p P=420.33u )"
 }
 C {sg13g2_pr/ptap1.sym} 0 30 0 0 {name=R2
 model=ptap1
 spiceprefix=X
 w=160.0e-6
 l=25e-6
-lvs_format="tcleval(@name @pinlist @model A=3344.1864p P=326.866u )"
+lvs_format="tcleval(@name @pinlist @model A=3344.1864p P=326.865u )"
 }
 C {iopin.sym} 220 80 0 0 {name=p7 lab=sub}
 C {iopin.sym} -110 -20 0 0 {name=p1 lab=iovss1}

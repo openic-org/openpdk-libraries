@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -120 40 -100 40 {lab=!}
 N 40 40 60 40 {lab=!}
@@ -34,11 +35,10 @@ N -200 -360 20 -360 {lab=vdd}
 N -120 -190 -100 -190 {lab=iovdd}
 N -100 -380 -100 -190 {lab=iovdd}
 N -160 -380 -100 -380 {lab=iovdd}
-N -120 -310 -110 -310 {lab=!}
+N -120 -310 -80 -310 {lab=iovss1}
 N -120 -170 -110 -170 {lab=!}
 N -110 -290 -110 -170 {lab=!}
 N -120 -290 -110 -290 {lab=!}
-N -110 -310 -110 -290 {lab=!}
 N 10 -200 10 -60 {lab=iovss1}
 N 30 -200 30 -100 {lab=!}
 N -110 -100 30 -100 {lab=!}
@@ -47,6 +47,8 @@ N -180 -240 -160 -240 {lab=pad}
 N -110 -170 -110 -100 {lab=!}
 N -120 -100 -110 -100 {lab=!}
 N -200 -100 -120 -100 {lab=!}
+N -80 -310 -80 -60 {lab=iovss1}
+N -80 -60 10 -60 {lab=iovss1}
 C {iopin.sym} -200 -380 0 1 {name=p9 lab=iovdd
 }
 C {iopin.sym} -200 -80 0 1 {name=p10 lab=vss
@@ -60,7 +62,7 @@ model=ptap1
 spiceprefix=X
 w=4.9e-6
 l=4.9e-6
-lvs_format="tcleval(@name @pinlist @model A=24p P=160.6u )"
+lvs_format="tcleval(@name @pinlist @model A=21.981p P=147.74u )"
 }
 C {iopin.sym} -200 -60 0 1 {name=p1 lab=iovss
 }
@@ -69,14 +71,14 @@ model=ptap1
 spiceprefix=X
 w=73.6e-6
 l=73.6e-6
-lvs_format="tcleval(@name @pinlist @model A=5416.1304p P=746.28u)"
+lvs_format="tcleval(@name @pinlist @model A=5379.0466p P=677.04u)"
 }
 C {iopin.sym} 10 -60 0 1 {name=p2 lab=iovss1
 }
-C {sg13g2_LevelDown_noptap.sym} 20 -240 0 0 {name=x4}
+C {sg13g2_LevelDown.sym} 20 -240 0 0 {name=x4}
 C {iopin.sym} -200 -240 0 1 {name=p3 lab=pad
 }
 C {iopin.sym} 80 -240 0 0 {name=p4 lab=p2c
 }
-C {sg13g2_DCPDiode_noptap.sym} -160 -300 0 0 {name=x2}
+C {sg13g2_DCPDiode.sym} -160 -300 0 0 {name=x2}
 C {sg13g2_DCNDiode.sym} -160 -180 0 0 {name=x1}

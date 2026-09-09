@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 0 0 0 20 {lab=core}
 N 0 -100 0 -80 {lab=iovdd}
@@ -40,12 +41,13 @@ C {sg13g2_pr/rppd.sym} -110 0 3 0 {name=R3
 w=1e-6
 l=2e-6
 model=rppd
-body=sub!
+body=sub
 spiceprefix=X
 b=0
 m=1
 value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
-lvs_format="R@name @pinlist \\$SUB=@body \\$[@model\\\\] w=@w l=@l b=@b m=@m"
+lvs_format="R@name @pinlist @body \\$[@model\\\\] w=@w l=@l b=@b m=@m"
 }
-C {lab_pin.sym} 0 100 0 1 {name=p2 sig_type=std_logic lab=!}
-C {iopin.sym} 0 140 0 0 {name=p5 lab=!}
+C {lab_pin.sym} 0 100 0 1 {name=p2 sig_type=std_logic lab=sub}
+C {iopin.sym} 0 140 0 0 {name=p5 lab=sub
+}
